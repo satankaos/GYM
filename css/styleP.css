@@ -26,7 +26,8 @@ header {
 .familiar,
 .FamiliarPremium,
 .Premium {
-	position: relative;
+	background-color: azure;
+	position:static;
 	float: left;
  margin-top: 2%;
  margin-left: 5%;
@@ -37,21 +38,29 @@ header {
 }
 
 .normal {
-	background-color: blueviolet;
+	background-color: azure;
 	position: relative;
 	float: left;
 	margin-left: 2%;
 	
 }
 
-.familiar {
-	background-color: burlywood;
-}
 
-.Premium {
-	background-color: chocolate;
-}
 
-.FamiliarPremium {
-	background-color: darkgoldenrod;
-}
+h4{margin-top: 17%;}
+/*boton*/
+.boton {
+	border: 1px solid #2e518b; /*anchura, estilo y color borde*/
+	padding: 12px; /*espacio alrededor texto*/
+	background-color: #2e518b; /*color botón*/
+	color: #ffffff; /*color texto*/
+	text-decoration: none; /*decoración texto*/
+	text-transform: uppercase; /*capitalización texto*/
+	font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+	border-radius: 50px; /*bordes redondos*/
+	}
+	.conboton{
+		margin:15%;
+	}
+
+/*fin boton*/
