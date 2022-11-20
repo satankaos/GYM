@@ -14,34 +14,75 @@
     </header>
     <div class="contenedor">
 
-    <form class="form">
-    <label for="nombre">Nombre</label>
-    <input type="text" name="nombre" >
-    <br>
-    <label for="apellidos">Apellidos</label>
-    <input type="text" name="apellidos" >
-    <br>
-    <label for="dni">dni</label>
-    <input type="text" name="dni" >
-    <br>
-    <label for="direccion">direccion</label>
-    <input type="text" name="difreccion" >
-    <br>
-    <label for="targeta">targeta</label>
-    <input type="text" name="targeta" >
-    <br>
-    <label for="ccv">ccv</label>
-    <input type="text" name="nsecreto" >
-    <br>
-    <label for="fech">fecha de vencimiento</label>
-    <input type="date">
-    <br>
-    <label for="contraseña">contraseña</label>
-    <input type="password" name="contraseña" >
-    <br>
+   <form id="form" >
+                    
+                    <!-- Grupo: Usuario -->
+                    
+                        <input class="controls" type="text" name="nombres_usuario" id="usuario" placeholder="Usuario">
+                        <p></p>
+                    
+                    <!-- Grupo: dni -->
+                
+                        <input class="controls" type="text" name="dni" id="dni" placeholder="dni">
+                        <p></p>
+                     
+                    <!-- Grupo: nombre -->
+
+                
+                        <input class="controls" type="text" name="nombres" placeholder=" Nombre" id="nombre">
+                        <p></p>
+                     
+                    <!-- Grupo: apellido-->
+                
+                        <input class="controls" type="text" name="apellidos" placeholder=" Apellido" id="apellidos">
+                        <p></p>
+                     
+                    <!-- Grupo: correo-->
+
+                
+                        <input class="controls" type="email" name="correo" placeholder=" Correo" id="correo">
+                        <p></p>
+                     
+                    <!-- Grupo: contraseña-->
+                
+                        <input class="controls" type="password" name="contraseña" placeholder="Contraseña"
+                            id="contraseña">
+                        <p></p>
+                     
+                    <!-- Grupo: repetir contraseña-->
+                
+                        <input class="controls" type="password" name="repetir_contraseña" id="repetir_contraseña"
+                            placeholder=" Repetir contraseña">
+                        <p></p>
+                     
+                    <!-- Grupo: Tfono-->
+                
+                        <input class="controls" type="text" name="telefono" placeholder="Telefono" id="telefono">
+                        <p></p>
+                     
+
+                    <!-- Grupo: iban-->
+                
+                        <input class="controls" type="text" name="IBAN" placeholder="Iban" id="IBAN">
+                        <p></p>
+                     
+                    <!-- Grupo: swift-->
+                    
+                        <input class="controls" type="text" name="SWIFT" placeholder="Swift" id="SWIFT">
+                        <p></p>
+                     
+                    <!-- Grupo: nac-->
+                     
+                        <p class="oP">cumpleaños</p>
+                        <input class="controls" type="date" name="fecha_nacimiento" id="fecha_nacimiento"
+                            placeholder="Fecha nacimiento">
+                        <p></p>
+                     <br>
+    <button class="boton" id="boton">Registrar</button>
+    
 </form>
 
 </div>
-
+<script src="../js/control.js"></script>
 </body>
 </html>

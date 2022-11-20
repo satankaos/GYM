@@ -1,20 +1,31 @@
 
+html{
+	background-image: url(/medios/photo-1580086319619-3ed498161c77.jpeg);
+	;
+}
 h2{color: #740FD1
 	;}
 .contenedor {
 
-	background-color:rgb(87, 207, 252);
-	height: 100%;
-	width: 100%;
-}
+display: flex;
+justify-content: center;
 
+	color: #ffffff;
+padding: 2%;
+text-align: center;
+}
+input{
+	margin: 5%;
+	width:300px;
+	height: 30px; 
+	 }
 * {
 	margin: 0;
 	padding: 0;
 }
 
 header {
-	background-color: aqua;
+	background-color: black;
 	width: 100%;
 }
 
@@ -62,3 +73,65 @@ img{
 	height: 100%;
 }
 /*fin boton*/
+/*validate*/
+form-control label {
+    display: inline-block;
+    margin-bottom: 1px;
+   
+}
+
+.form-control input {
+    border: none;
+    background-color: #f0f0f0;
+    display: block;
+    font-family: inherit;
+
+
+        
+}
+.form-control, input:focus {
+    outline: none;
+}
+
+.form-control.ok input {
+    border: 0.1px solid;
+    border-color: #08ffc8;
+}
+.form-control.falla input {
+    border: 0.1px solid;
+    border-color: #fe5f55;
+}
+
+#formulario button {
+    background: #fd4f00;
+    border:1px solid #fd5f00;
+    border-radius: 2px;
+    color: #f6f6e9;
+    display: block;
+  
+  
+ 
+}
+.form-control p {
+    visibility: hidden;
+    position: relative;
+    font-size: small;
+ 
+    text-align: center;
+}
+
+.form-control.falla p {
+    visibility: visible;
+    color:#e74c3c;
+    margin: 5px;
+}
+.form-control.ok p {
+    visibility: visible;
+    color:#08ffc8;
+    margin: 5px;
+}
+
+#boton1{
+    float:left;
+}
+/*fin validate*/
