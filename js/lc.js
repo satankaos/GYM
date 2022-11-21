@@ -2,38 +2,29 @@
 console.log("hola")
 $('#boton1').click(()=>{
     localStorage.setItem('precio','39.99');
-    console.log("hola dentro");
-    precio = localStorage.getItem('precio')
-
- 
+    localStorage.setItem('nombre','Personal');
+    
 
   })
   
 $('#boton2').click(()=>{
     localStorage.setItem('precio','50');
-    console.log("hola dentro")
+    localStorage.setItem('nombre','Familiar');
     
-    precio = localStorage.getItem('precio')
-
- document.getElementById("nprecio").innerHTML = precio;
   })
 $('#boton3').click(()=>{
     localStorage.setItem('precio','100');
-    console.log("hola dentro")
-    
-    precio = localStorage.getItem('precio')
-
- document.getElementById("nprecio").innerHTML = precio;
+    localStorage.setItem('nombre','Personal Premium');
   })
 $('#boton4').click(()=>{
     localStorage.setItem('precio','150');
+    localStorage.setItem('nombre','Familiar Premium')
+  })
+  $( document ).ready(function() {
+    var precio = localStorage.getItem('precio');
+    var nombre = localStorage.getItem('nombre');
+    let nprecio=precio+'€'
+    $('.nprecio').text(nombre+"\n"+nprecio);               
+              
     
-    precio = localStorage.getItem('precio')
-
- document.getElementById("nprecio").innerHTML = precio
-  })/*;
-  function cambiarTex(precio){
-    precio = localStorage.getItem('precio')
-
-    document.getElementById("nprecio").innerHTML = precio
-  }*/
+});
