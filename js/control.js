@@ -1,3 +1,4 @@
+
 window.addEventListener('load', () => {
   const form = document.querySelector('#form');
   const usuario = document.getElementById('usuario');
@@ -38,22 +39,22 @@ form.addEventListener('reset', (e) => {
     var regus = /([A-Za-z]{1,2}|[0-9]{1,2}|[A-Za-z][0-9])/
     if (!usuarioValor) {
       //console.log('CAMPO VACIO')
-      validaFalla(usuario, 'Campo vacío1')
+      validaFalla(usuario)
       OK=false
     } else if(!usuarioValor.match(regus)){
-      validaFalla(usuario, 'formato de ususario invalido')
+      validaFalla(usuario)
       OK=false
     }else{
-      validaOk(usuario,"usuario  valido")
+      validaOk(usuario)
       
     }
 
     var reget = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/
     if (!correoValor) {
-      validaFalla(correo, 'Campo vacío')
+      validaFalla(correo)
       OK=false
     } else if (!correoValor.match(reget)) {
-      validaFalla(correo, 'El e-mail no es válido')
+      validaFalla(correo)
       OK=false
     } else {
       validaOk(correo,"correo valido")
@@ -62,23 +63,23 @@ form.addEventListener('reset', (e) => {
     //validando campo password
     const er = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,18}$/
     if (!contraseñaValor) {
-      validaFalla(contraseña, 'Campo vacío')
+      validaFalla(contraseña)
       OK=false
     } else if (contraseñaValor.length < 8) {
-      validaFalla(contraseña, 'Debe tener 8 caracteres cómo mínimo.')
+      validaFalla(contraseña)
       OK=false
     } else if (!contraseñaValor.match(er)) {
-      validaFalla(contraseña, 'Debe tener al menos una may., una min. y un núm.')
+      validaFalla(contraseña)
       OK=false
     } else {
-      validaOk(contraseña,"contraseña valida") 
+      validaOk(contraseña) 
       
     }
     //validando campo password Confirmación
     if (!c2Valor) {
-      validaFalla(c2, 'Confirme su password')
+      validaFalla(c2)
     } else if (contraseñaValor !== c2Valor) {
-      validaFalla(c2, 'La password no coincide')
+      validaFalla(c2)
       OK=false
     } else {
       validaOk(c2)
@@ -89,18 +90,18 @@ form.addEventListener('reset', (e) => {
 
     if (!nombreValor) {
 
-      validaFalla(nombre, "nombre no valido")
+      validaFalla(nombre)
     } else if(nombreValor.length<4){
-      validaFalla(nombre, "nombre demasido corto")
+      validaFalla(nombre)
       OK=false
     }else{
-      validaOk(nombre,"nombre valido")
+      validaOk(nombre)
       
        
     }
     if (!apellidoValor) {
 
-      validaFalla(apellido, "apellido no valido")
+      validaFalla(apellido)
       OK=false
     } else {
       validaOk(apellido," ") 
@@ -110,50 +111,50 @@ form.addEventListener('reset', (e) => {
 
     if (!telefonoValor) {
 
-      validaFalla(telefono, "telefono no valido")
+      validaFalla(telefono)
       OK=false
     } else if (!telefonoValor.match(rexte2)) {
-      validaFalla(telefono, "formato de telefono mal")
+      validaFalla(telefono)
       OK=false
     } else {
-      validaOk(telefono,"telefono valido")
+      validaOk(telefono)
       
     };
     var rexib = /([a-zA-Z]{2})\s*\t*(\d{2})\s*\t*(\d{4})\s*\t*(\d{4})\s*\t*(\d{2})\s*\t*(\d{10})/g
     if (!ibanValor) {
-      validaFalla(IBAN, "iban no valido")
+      validaFalla(IBAN)
     } else if (!ibanValor.match(rexib)) {
-      validaFalla(IBAN, "formato incorrecto")
+      validaFalla(IBAN)
     } else {
-      validaOk(IBAN,"iban valido")
+      validaOk(IBAN)
       
     }
       var regsw = /([a-zA-Z]{4})([a-zA-Z]{2})(([2-9a-zA-Z]{1})([0-9a-np-zA-NP-Z]{1}))((([0-9a-wy-zA-WY-Z]{1})([0-9a-zA-Z]{2}))|([xX]{3})|)/g
     if (!SWIFTValor) {
 
-      validaFalla(SWIFT, "swift no valido")
+      validaFalla(SWIFT)
     } else if (!SWIFTValor.match(regsw)){
-      validaFalla(SWIFT, "swift no valido")
+      validaFalla(SWIFT)
     }else{
-      validaOk(SWIFT,"swift  valido")
+      validaOk(SWIFT)
       
     }
 
     if (!fnValor) {
 
-      validaFalla(fecha_nacimiento, "edad no valida")
+      validaFalla(fecha_nacimiento)
       OK=false
     } else {
-      validaOk(fecha_nacimiento,"fecha  valida")
+      validaOk(fecha_nacimiento)
       
     }
     if (!dniValor) {
 
-      validaFalla(dniValor, "dni no valido")
+      validaFalla(dniValor)
       OK=false
     } else {
       if (validaDni(dniValor)) {
-        validaOk(dni,"dni correcto")
+        validaOk(dni)
         
       }
       
@@ -177,13 +178,13 @@ form.addEventListener('reset', (e) => {
        
         completra= letra.charAt(numero % 23)// hacemos la division para qur nos de el indice y saquemos la letra
        if (completra!=letr.toUpperCase()) {
-          validaFalla(dni,'Dni erroneo, la letra del NIF no se corresponde');
+          validaFalla(dni);
           OK=false
         }else{
           validaOk(dni)
         }
      }else{
-       validaFalla(dni,'Dni erroneo, formato no válido');
+       validaFalla(dni);
        OK=false
       }
       var numero
@@ -200,7 +201,7 @@ form.addEventListener('reset', (e) => {
          letr = dniVAlor.substr(8,9);//saco la letra de el dni 
          completra= letra.charAt(numero % 23)// hacemos la division para qur nos de el indice y saquemos la letra
        if (dniVAlor.length>9){//comprueva que no tenga mas de 9 caracteres
-        validaFalla(dni,"tiene mas de 9 caracteres")
+        validaFalla(dni)
         OK=false
           }else if (completra!=letr.toUpperCase()) {//conprueba la letra del dni con la sacada de la formula 
                  validaFalla(dni,'Dni erroneo, la letra del NIF no se corresponde');
@@ -243,3 +244,6 @@ function  esOk() {
     setTimeout(()=>{ alert("Enviado");},1000) 
 }
 })
+
+/*local*/ 
+

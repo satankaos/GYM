@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styleS.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Insertion</title>
 </head>
 
@@ -13,63 +14,65 @@
         <img src="../medios/Proyecto nuevo.jpg" alt="gym clau" srcset="">
     </header>
     <div class="contenedor">
-
+        <div class="nprecio">
+           
+        </div>
    <form id="form" >
                     
                     <!-- Grupo: Usuario -->
                     
                         <input class="controls" type="text" name="nombres_usuario" id="usuario" placeholder="Usuario">
-                        <p></p>
+                        <p id="erUsusario"></p>
                     
                     <!-- Grupo: dni -->
                 
                         <input class="controls" type="text" name="dni" id="dni" placeholder="dni">
-                        <p></p>
+                        <p id="erDni" ></p>
                      
                     <!-- Grupo: nombre -->
 
                 
                         <input class="controls" type="text" name="nombres" placeholder=" Nombre" id="nombre">
-                        <p></p>
+                        <p id="erNombre"></p>
                      
                     <!-- Grupo: apellido-->
                 
                         <input class="controls" type="text" name="apellidos" placeholder=" Apellido" id="apellidos">
-                        <p></p>
+                        <p id="erApellido" ></p>
                      
                     <!-- Grupo: correo-->
 
                 
                         <input class="controls" type="email" name="correo" placeholder=" Correo" id="correo">
-                        <p></p>
+                        <p id="erCorreo"></p>
                      
                     <!-- Grupo: contraseña-->
                 
                         <input class="controls" type="password" name="contraseña" placeholder="Contraseña"
                             id="contraseña">
-                        <p></p>
+                        <p id="erContraseña"></p>
                      
                     <!-- Grupo: repetir contraseña-->
                 
                         <input class="controls" type="password" name="repetir_contraseña" id="repetir_contraseña"
                             placeholder=" Repetir contraseña">
-                        <p></p>
+                        <p id="erContraseña2"></p>
                      
                     <!-- Grupo: Tfono-->
                 
                         <input class="controls" type="text" name="telefono" placeholder="Telefono" id="telefono">
-                        <p></p>
+                        <p id="erTelefono"></p>
                      
 
                     <!-- Grupo: iban-->
                 
                         <input class="controls" type="text" name="IBAN" placeholder="Iban" id="IBAN">
-                        <p></p>
+                        <p id="erIban"></p>
                      
                     <!-- Grupo: swift-->
                     
                         <input class="controls" type="text" name="SWIFT" placeholder="Swift" id="SWIFT">
-                        <p></p>
+                        <p id="erSwift" ></p>
                      
                     <!-- Grupo: nac-->
                      
@@ -84,5 +87,6 @@
 
 </div>
 <script src="../js/control.js"></script>
+<script src="../js/lc.js"></script>
 </body>
 </html>
