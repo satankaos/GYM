@@ -13,8 +13,8 @@ h2{color: #740FD1
 	
 		background-color: #2e518b;
 		opacity: 0.8;
-		width: 25%;
-		margin-left: 37%;
+		width: 50%;
+		margin-left: 25%;
 		border-radius: 20%;
 	}
 .contenedor {
@@ -27,10 +27,14 @@ padding: 2%;
 text-align: center;
 }
 input{
+	
 	margin-top: 50px;
-	margin: .5%;
-	width:300px;
-	height: 30px; 
+	position: relative;
+	min-width: 200px;
+	width: 625px;
+	min-height: 33px;
+	height: 55px; 
+	margin: .4%;
 	 }
 * {
 	margin: 0;
@@ -87,7 +91,8 @@ img{
 }
 /*fin boton*/
 /*validate*/
-form-control label {
+/**/
+/*form-control label {
     display: inline-block;
     margin-bottom: 1px;
    
@@ -142,7 +147,7 @@ form-control label {
     visibility: visible;
     color:#08ffc8;
     margin: 5px;
-}
+}*/
 
 #boton1{
     float:left;

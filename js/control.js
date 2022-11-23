@@ -13,9 +13,7 @@ window.addEventListener('load', () => {
   const SWIFT = document.getElementById('SWIFT');
   const fecha_nacimiento = document.getElementById('fecha_nacimiento');
   const registrar=document.getElementById('boton');
-  function validar() {
-    window.open("./html/validaido.html", "_self");
-}
+  
  
 form.addEventListener('reset', (e) => {
   e.preventDefault()
@@ -204,14 +202,14 @@ form.addEventListener('reset', (e) => {
         validaFalla(dni)
         OK=false
           }else if (completra!=letr.toUpperCase()) {//conprueba la letra del dni con la sacada de la formula 
-                 validaFalla(dni,'Dni erroneo, la letra del NIF no se corresponde');
+                 validaFalla(dni);
                  OK=false
               }else{
-              validaOk(dni,"dni correcto")
+              validaOk(dni)
               
             }
          }else{
-          validaFalla(dni,'Dni erroneo, formato no válido');
+          validaFalla(dni);
           OK=false
              }
       
@@ -227,16 +225,12 @@ form.addEventListener('reset', (e) => {
 /** lo uso para cambiar el color de el input y mandar el mensaje  */
  const validaFalla = (input, msje) => {
   const formControl = input.parentElement
-  const aviso = formControl.querySelector('p')
-  aviso.innerText = msje
-
   formControl.className = 'form-control falla'
 }
 /** igual pero cuando es correcto  */
 const validaOk = (input,msje) => {
   const formControl = input.parentElement
-  const aviso = formControl.querySelector('p')
-  aviso.innerText = msje
+ 
   formControl.className = 'form-control ok'
 }
 

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styleS.css">
+    <link rel="stylesheet" href="../css/pay.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Insertion</title>
 </head>
@@ -64,23 +65,19 @@
                         <p id="erTelefono"></p>
                      
 
-                    <!-- Grupo: iban-->
-                
-                        <input class="controls" type="text" name="IBAN" placeholder="Iban" id="IBAN">
-                        <p id="erIban"></p>
-                     
-                    <!-- Grupo: swift-->
+                        <div id="smart-button-container">
+                            <div style="text-align: center;" >
+                              <div style="margin-bottom: 1.25rem;">
+                                <p>pago de mensualidad de Gym Clau</p>
+                                <select id="item-options"><option value="Personal" price="39.99">Personal - 39.99 EUR</option><option value="Familiar" price="50">Familiar - 50 EUR</option><option value="Personal Premium" price="100">Personal Premium - 100 EUR</option><option value="Familiar Premium" price="150">Familiar Premium - 150 EUR</option></select>
+                                <select style="visibility: hidden" id="quantitySelect"></select>
+                              </div>
+                            <div id="paypal-button-container"></div>
+                            </div>
+                          </div>
+                          <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+                         
                     
-                        <input class="controls" type="text" name="SWIFT" placeholder="Swift" id="SWIFT">
-                        <p id="erSwift" ></p>
-                     
-                    <!-- Grupo: nac-->
-                     
-                        <p class="oP">cumpleaños</p>
-                        <input class="controls" type="date" name="fecha_nacimiento" id="fecha_nacimiento"
-                            placeholder="Fecha nacimiento">
-                        <p></p>
-                     <br>
     <button class="boton" id="boton">Registrar</button>
     
 </form>
@@ -88,5 +85,6 @@
 </div>
 <script src="../js/control.js"></script>
 <script src="../js/lc.js"></script>
+<script src="/js/pay.js"></script>
 </body>
 </html>
