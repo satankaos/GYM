@@ -92,7 +92,7 @@ img{
 /*fin boton*/
 /*validate*/
 /**/
-/*form-control label {
+form-control label {
     display: inline-block;
     margin-bottom: 1px;
    
@@ -147,7 +147,7 @@ img{
     visibility: visible;
     color:#08ffc8;
     margin: 5px;
-}*/
+}
 
 #boton1{
     float:left;
