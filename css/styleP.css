@@ -2,12 +2,16 @@ html,
 body {
 	width: 100%;
 	height: 100%;
+	background-image: url(/medios/fondo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	
 }
 h2{color: #740FD1
 	;}
 .contenedor {
 
-	background-color:rgb(87, 207, 252);
+	
 	height: 70%;
 	width: 100%;
 }
@@ -18,7 +22,7 @@ h2{color: #740FD1
 }
 
 header {
-	background-color: aqua;
+
 	height: 30%;
 	width: 100%;
 }

@@ -160,6 +160,7 @@ window.addEventListener('load', () => {
         letra = 'TRWAGMYFPDXBNJZSQVHLCKET';
         numero = dniVAlor.substr(0, 8);//saco los numeros de el dni
         letr = dniVAlor.substr(8, 9);//saco la letra de el dni 
+        
         completra = letra.charAt(numero % 23)// hacemos la division para qur nos de el indice y saquemos la letra
         if (dniVAlor.length > 9) {//comprueva que no tenga mas de 9 caracteres
           validaFalla(dni)

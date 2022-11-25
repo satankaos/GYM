@@ -1,7 +1,9 @@
 
 html{
-	background-image: url(/medios/photo-1580086319619-3ed498161c77.jpeg);
-	;
+	background-image: url(/medios/fondo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	
 }
 h2{color: #740FD1
 	;}
@@ -18,7 +20,7 @@ h2{color: #740FD1
 		border-radius: 20%;
 	}
 .contenedor {
-
+opacity: 1;
 display: absolute;
 justify-content: center;
 
