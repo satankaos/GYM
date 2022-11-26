@@ -1,5 +1,5 @@
 /**/ 
-console.log("hola")
+
 $('#boton1').click(()=>{
     localStorage.setItem('precio','39.99');
     localStorage.setItem('nombre1','Personal');
@@ -22,9 +22,9 @@ $('#boton4').click(()=>{
   })
   $( document ).ready(function() {
     var precio = localStorage.getItem('precio');
-    var nombre = localStorage.getItem('nombre1');
+    var nombre1 = localStorage.getItem('nombre1');
     let nprecio=precio+'€'
-    $('.nprecio').text(nombre+"\n"+nprecio);               
+    $('.nprecio').text(nombre1+"\n"+nprecio);               
               
     
 });

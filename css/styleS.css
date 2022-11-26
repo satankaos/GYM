@@ -4,6 +4,7 @@ html{
 	background-repeat: no-repeat;
 	background-size: cover;
 	
+	
 }
 h2{color: #740FD1
 	;}
@@ -28,6 +29,7 @@ justify-content: center;
 padding: 2%;
 text-align: center;
 }
+
 input{
 	
 	margin-top: 50px;
@@ -94,33 +96,9 @@ img{
 /*fin boton*/
 /*validate*/
 /**/
-form-control label {
-    display: inline-block;
-    margin-bottom: 1px;
-   
-}
-
-.form-control input {
-    border: none;
-    background-color: #f0f0f0;
-    display: block;
-    font-family: inherit;
 
 
-        
-}
-.form-control, input:focus {
-    outline: none;
-}
 
-.form-control.ok input {
-    border: 0.1px solid;
-    border-color: #08ffc8;
-}
-.form-control.falla input {
-    border: 0.1px solid;
-    border-color: #fe5f55;
-}
 
 #formulario button {
     background: #fd4f00;
@@ -132,25 +110,10 @@ form-control label {
   
  
 }
-.form-control p {
-    visibility: hidden;
-    position: relative;
-    font-size: small;
- 
-    text-align: center;
-}
 
-.form-control.falla p {
-    visibility: visible;
-    color:#e74c3c;
-    margin: 5px;
+p{
+	color: black;
 }
-.form-control.ok p {
-    visibility: visible;
-    color:#08ffc8;
-    margin: 5px;
-}
-
 #boton1{
     float:left;
 }
